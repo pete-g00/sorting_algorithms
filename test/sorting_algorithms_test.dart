@@ -29,9 +29,13 @@ bool checkWorks(List<int> Function(List<int>) sortingAlg) {
 }
 
 void main() {
-  group('Tests the algorithms.', () {
-    test('Insertion Sort Test', () {
+  group('Testing the algorithms.', () {
+    test('Insertion Sort test', () {
       expect(checkWorks(insertionSort), isTrue);
+    });
+
+    test('Selection Sort test', () {
+      expect(checkWorks(selectionSort), isTrue);
     });
   });
 }
