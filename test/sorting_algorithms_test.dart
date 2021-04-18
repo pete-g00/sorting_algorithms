@@ -37,5 +37,14 @@ void main() {
     test('Selection Sort test', () {
       expect(checkWorks(selectionSort), isTrue);
     });
+
+    test('Counting Sort test', () {
+      expect(checkWorks((List<int> list) => countingSort(list, 5000)),
+      isTrue);
+    });
+
+    test('Radix Sort test', () {
+      expect(checkWorks((List<int> list) => radixSort(list, 4)), isTrue);
+    });
   });
 }
