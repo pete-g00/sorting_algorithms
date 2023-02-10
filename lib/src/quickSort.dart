@@ -17,7 +17,7 @@ int partition(List<int> list, int p, int r) {
   return i+1;
 }
 
-List<int> quickSort(List<int> list, [int p = 0, int r]) {
+List<int> quickSort(List<int> list, [int p = 0, int? r]) {
   r ??= list.length-1;
   if (p < r) {
     final q = partition(list, p, r);

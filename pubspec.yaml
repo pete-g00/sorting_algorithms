@@ -3,7 +3,7 @@ description: A starting point for Dart libraries or applications.
 homepage: https://github.com/pete-g00/sorting_algorithms
 
 environment:
-  sdk: '>=2.10.0 <3.0.0'
+  sdk: '>=2.18.6 <3.0.0'
 
 dev_dependencies:
   pedantic: ^1.9.0

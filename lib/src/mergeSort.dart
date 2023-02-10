@@ -21,7 +21,7 @@ void merge(List<int> list, int p, int q, int r) {
   }
 }
 
-List<int> mergeSort(List<int> list, [int p = 0, int r]) {
+List<int> mergeSort(List<int> list, [int p = 0, int? r]) {
   r ??= list.length-1;
   if (p < r) {
     final q = (p+r)~/2;
